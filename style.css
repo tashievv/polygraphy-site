@@ -1,0 +1,343 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/photo-1495578942200-c5f5d2137def.jpg);
+}
+/*GLOBALS */
+.global-div {
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: blue;
+  display: inline-block;
+  margin: 0;
+  margin-left: 150px;
+  margin-right: 10px;
+}
+.global-h2 {
+  color: aliceblue;
+}
+.global-p {
+  color: aliceblue;
+}
+/*HEADER*/
+.container {
+  background-color: chocolate;
+}
+.logo img {
+  height: 150px;
+  width: 150px;
+  margin: 15px 10px 15px 10px;
+  float: left;
+}
+.header-parts {
+  height: 130px;
+  line-height: 130px;
+}
+.header-parts h1 {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+/*HEADER-NAV-LINKS*/
+.header-nav .header-menu-item {
+  list-style: none; /*Убираем маркер*/
+  display: inline-block; /*Выстраиваем пункты в ряд*/
+  background: #ccc; /*Цвет фона для пункта*/
+  position: relative;
+  border-color: tan;
+  border-style: solid;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 0;
+}
+.header-nav .header-menu-item:hover {
+  background: #eee; /*Цвет фона при наведение на пункт*/
+  border-color: saddlebrown;
+  padding: 10px;
+}
+.header-nav .header-menu-item a {
+  color: #222; /*Цвет шрифта в пункте*/
+  padding: 5px 7px; /*Отступы для пункта*/
+  text-decoration: none; /*Убираем подчеркивание*/
+  display: block;
+}
+.header-nav .header-menu-item-client a {
+  color: #222; /*Цвет шрифта в пункте*/
+  padding: 5px 7px; /*Отступы для пункта*/
+  text-decoration: none; /*Убираем подчеркивание*/
+  display: block;
+}
+.header-nav .header-menu-item-client {
+  list-style: none; /*Убираем маркер*/
+  display: inline-block; /*Выстраиваем пункты в ряд*/
+  background: #ccc; /*Цвет фона для пункта*/
+  position: relative;
+  border-color: tan;
+  border-style: solid;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 0;
+}
+.header-nav .header-menu-item-client:hover {
+  background: goldenrod; /*Цвет фона при наведение на пункт*/
+  border-color: gold;
+  padding: 10px;
+}
+.more {
+  cursor: pointer;
+  display: inline-block;
+  border-style: solid;
+  border-color: burlywood;
+  border-radius: 5px;
+  color: ghostwhite;
+}
+/*MAIN*/
+/*SPAN-JOB*/
+.span-design {
+  font-size: 40px;
+  line-height: 50px;
+  font-family: Verdana, sans-serif;
+  font-weight: 900;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  color: aqua;
+}
+.span-design:before {
+  content: "";
+  position: absolute;
+  filter: blur(10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 1em,
+      #bfe2ff 1em,
+      #337ab7 50%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #337ab7,
+      #337ab7 1em,
+      #fff 1em,
+      #bfe2ff 50%
+    );
+  background-size: 3em 3em, 2em 2em;
+  animation-name: ani;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.span-ceramic {
+  font-size: 40px;
+  line-height: 50px;
+  font-family: Verdana, sans-serif;
+  font-weight: 900;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  color: blueviolet;
+}
+.span-ceramic:before {
+  content: "";
+  position: absolute;
+  filter: blur(10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 1em,
+      #bfe2ff 1em,
+      #337ab7 50%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #337ab7,
+      #337ab7 1em,
+      #fff 1em,
+      #bfe2ff 50%
+    );
+  background-size: 3em 3em, 2em 2em;
+  animation-name: ani;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes ani {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@media (max-width: 690px) {
+  .pouring {
+    font-size: 20px;
+  }
+}
+/*ABOUT-INNER*/
+.about-inner {
+  background-color: red;
+  margin: 0;
+  display: inline-block;
+  padding: 30px;
+}
+.about-inner-job {
+  background-color: purple;
+  margin: 0;
+  display: inline-block;
+  padding: 20px;
+  margin-left: 50px;
+}
+.about-inner-disabled-person {
+  background-color: darkgreen;
+  margin: 0;
+  display: inline-block;
+  padding: 40px;
+  margin-left: 90px;
+}
+/*SIDE CHOICE*/
+.side-h1 {
+  color: chartreuse;
+  text-align: center;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: lawngreen;
+}
+.vs-img {
+  padding-left: 370px;
+  display: inline-block;
+}
+/*DESIGN-SIDE*/
+.design-side {
+  color: aliceblue;
+  font-size: 20px;
+  display: inline-block;
+  padding-left: 350px;
+}
+.design-side-h3-span {
+  padding-left: 40px;
+  color: aqua;
+}
+.design-side-ul {
+  list-style: none;
+}
+.design-side-li {
+  padding-bottom: 10px;
+}
+.design-side-li:hover {
+  color: greenyellow;
+}
+/*CERAMIC SIDE*/
+.ceramic-side {
+  color: aliceblue;
+  font-size: 20px;
+  display: inline-block;
+}
+.ceramic-side-h3-span {
+  padding-left: 40px;
+  color: yellow;
+}
+.ceramic-side-ul {
+  list-style: none;
+}
+.ceramic-side-li {
+  padding-bottom: 10px;
+}
+.ceramic-side-li:hover {
+  color: gold;
+}
+/*CONTACTS*/
+.contacts-h1 {
+  border-color: lime;
+  border-style: solid;
+  border-radius: 5px;
+  color: lime;
+  text-align: center;
+}
+.contacts-phone {
+  background-color: seagreen;
+  display: inline-block;
+  margin-left: 200px;
+  padding: 35px;
+}
+.contacts-address {
+  background-color: slateblue;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 25px;
+}
+/*OUR OFFICE*/
+.our-office-h1 {
+  border-color: orangered;
+  border-style: solid;
+  border-radius: 5px;
+  color: aliceblue;
+  text-align: center;
+}
+.office-img-alt {
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  margin-left: 80px;
+}
+.our-office-address {
+  background-color: darkblue;
+  margin-left: 400px;
+  padding: 25px;
+  display: inline-block;
+}
+.paycheck {
+  background-color: darkorchid;
+  margin-left: 250px;
+  padding: 35px;
+  display: inline-block;
+}
+.plan {
+  background-color: deeppink;
+  padding: 45px;
+  display: inline-block;
+}
+/*FOOTER*/
+.make-order-h1-alt {
+  border-color: gold;
+  border-style: solid;
+  border-radius: 5px;
+  text-align: center;
+  color: aliceblue;
+}
+.footer {
+  background-color: goldenrod;
+  margin-left: 435px;
+  padding: 65px;
+  display: inline-block;
+}
+.scroll-up {
+  color: aliceblue;
+  text-decoration: none;
+  transition: 0.4s;
+  border-color: blue;
+  border-style: groove;
+}
+.scroll-up:hover {
+  color: aqua;
+  border-style: solid;
+}
